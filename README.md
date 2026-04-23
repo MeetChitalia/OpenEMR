@@ -1,67 +1,174 @@
-![Syntax Status](https://github.com/openemr/openemr/workflows/Syntax/badge.svg?branch=rel-700)
-![Styling Status](https://github.com/openemr/openemr/workflows/Styling/badge.svg?branch=rel-700)
-![Testing Status](https://github.com/openemr/openemr/workflows/Test/badge.svg?branch=rel-700)
+# OpenEMR Customized Edition
 
-[![Backers on Open Collective](https://opencollective.com/openemr/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/openemr/sponsors/badge.svg)](#sponsors)
+![Platform](https://img.shields.io/badge/Platform-OpenEMR-blue)
+![Backend](https://img.shields.io/badge/Backend-PHP-777BB4)
+![Database](https://img.shields.io/badge/Database-MySQL%20%2F%20MariaDB-orange)
+![Frontend](https://img.shields.io/badge/Frontend-JavaScript-yellow)
+![Server](https://img.shields.io/badge/Server-Apache-red)
+![Maintained By](https://img.shields.io/badge/Maintained%20By-Meet%20Chitalia-success)
 
-# OpenEMR
+A customized and extended implementation of **OpenEMR**, built and maintained by **Meet Chitalia**.
 
-[OpenEMR](https://open-emr.org) is a Free and Open Source electronic health records and medical practice management application. It features fully integrated electronic health records, practice management, scheduling, electronic billing, internationalization, free support, a vibrant community, and a whole lot more. It runs on Windows, Linux, Mac OS X, and many other platforms.
+This project enhances the standard OpenEMR platform with clinic-focused improvements in **Point of Sale**, **inventory management**, **reporting**, **billing workflows**, and **operational controls**. The goal is to make day-to-day clinical and front-desk operations more accurate, more efficient, and easier to manage in production.
 
-### Contributing
+---
 
-OpenEMR is a leader in healthcare open source software and comprises a large and diverse community of software developers, medical providers and educators with a very healthy mix of both volunteers and professionals. [Join us and learn how to start contributing today!](https://open-emr.org/wiki/index.php/FAQ#How_do_I_begin_to_volunteer_for_the_OpenEMR_project.3F)
+## Overview
 
-> Already comfortable with git? Check out [CONTRIBUTING.md](CONTRIBUTING.md) for quick setup instructions and requirements for contributing to OpenEMR by resolving a bug or adding an awesome feature 😊.
+OpenEMR is a powerful open source Electronic Health Records (EHR) and medical practice management system. In this customized edition, I expanded the platform with tailored workflows and business logic to support real operational requirements beyond the default product behavior.
 
-### Support
+This version includes custom work in:
 
-Community and Professional support can be found [here](https://open-emr.org/wiki/index.php/OpenEMR_Support_Guide).
+- Point of Sale and checkout flow
+- Backdated transaction support
+- Inventory deduction and QOH tracking
+- Visit type logic and workflow routing
+- Price override approval flow
+- DCR and reporting enhancements
+- Receipt rendering and transaction visibility
+- Production bug fixes and staging-to-production support
 
-Extensive documentation and forums can be found on the [OpenEMR website](https://open-emr.org) that can help you to become more familiar about the project 📖.
+---
 
-### Reporting Issues and Bugs
+## About Me
 
-Report these on the [Issue Tracker](https://github.com/openemr/openemr/issues). If you are unsure if it is an issue/bug, then always feel free to use the [Forum](https://community.open-emr.org/) and [Chat](https://www.open-emr.org/chat/) to discuss about the issue 🪲.
+Hi, I’m **Meet Chitalia**.
 
-### Reporting Security Vulnerabilities
+I specialize in customizing healthcare applications and building workflow-driven solutions that improve clinical operations, financial visibility, and system reliability. My work focuses on translating real operational pain points into practical product improvements.
 
-Check out [SECURITY.md](.github/SECURITY.md)
+Areas I work in most often:
 
-### API
+- POS and billing systems
+- Inventory and quantity tracking
+- Reporting and reconciliation
+- Clinical workflow customization
+- Admin approval and validation flows
+- Debugging production issues
+- Enhancing legacy PHP/OpenEMR systems
 
-Check out [API_README.md](API_README.md)
+---
 
-### Docker
+## Star Features
 
-Check out [DOCKER_README.md](DOCKER_README.md)
+## 1. Customized POS System
+A fully customized POS experience built into OpenEMR to support clinic-specific workflows.
 
-### FHIR
+Key capabilities:
+- Consultation billing
+- Product and medicine sales
+- Dispense and administer flows
+- Mixed transaction support
+- Receipt generation
+- Payment processing
+- Credit balance handling
+- Refund and transaction history workflows
 
-Check out [FHIR_README.md](FHIR_README.md)
+## 2. Backdated POS Transactions
+Support for recording transactions against prior dates for operational accuracy.
 
-### For Developers
+Benefits:
+- Better reconciliation
+- Accurate historical reporting
+- Reduced manual correction effort
 
-If using OpenEMR directly from the code repository, then the following commands will build OpenEMR (Node.js version 16.* is required) :
+## 3. Inventory Management with QOH Tracking
+Enhanced inventory controls tied directly to operational POS activity.
 
-```shell
+Capabilities:
+- Quantity-on-hand visibility
+- Lot-level tracking
+- Dispense/administer linked deduction
+- Product-specific deduction rules
+- Better stock control and accountability
+
+## 4. Visit Type Workflow Logic
+Custom visit classification to support front-desk and clinical flow.
+
+Visit types include:
+- New
+- Follow-Up
+- Injection
+- Returning
+
+This improves workflow consistency and reporting quality.
+
+## 5. Price Override with Admin Validation
+Added secure price override handling with approval flow and control logic.
+
+Benefits:
+- Better pricing governance
+- Reduced unauthorized overrides
+- Safer checkout flexibility
+
+## 6. Enhanced DCR Reporting
+Extended the Daily Collection Report with operational and financial improvements.
+
+Enhancements include:
+- Visit-type-aware reporting
+- Override notes
+- Card punch behavior improvements
+- Export improvements
+- Better medicine tracking
+- Better patient-level operational visibility
+
+## 7. Receipt and Transaction Improvements
+Customized receipt behavior to reflect actual sale activity more clearly.
+
+Examples:
+- Dispense shown on receipts
+- Administer shown on receipts
+- Better payment summaries
+- More accurate sale representation
+
+## 8. Stability and Bug Fixes
+Resolved multiple issues across POS, receipts, inventory deduction, DCR reporting, and staging/production behavior.
+
+---
+
+## Key Contributions
+
+This customized version includes work such as:
+
+- Built and customized the POS system
+- Added consultation and billing workflows
+- Implemented backdated POS functionality
+- Developed inventory management improvements
+- Added QOH tracking and deduction rules
+- Implemented custom visit type logic
+- Built admin-based price override validation
+- Enhanced DCR reports and export output
+- Fixed POS and payment flow issues
+- Improved receipt rendering logic
+- Fixed inventory deduction during dispense/administer actions
+- Added clinic-specific workflow improvements across reporting and operations
+
+---
+
+## Project Architecture Focus
+
+This implementation is centered around four operational goals:
+
+1. Improve clinic workflow speed  
+2. Increase billing and inventory accuracy  
+3. Strengthen reporting and operational visibility  
+4. Deliver production-ready customizations tailored to real clinic needs
+
+---
+
+## Tech Stack
+
+- **PHP**
+- **JavaScript**
+- **MySQL / MariaDB**
+- **Apache / XAMPP**
+- **OpenEMR Framework**
+
+---
+
+## Setup Instructions
+
+```bash
 composer install --no-dev
 npm install
 npm run build
 composer dump-autoload -o
-```
-
-### Contributors
-
-This project exists thanks to all the people who have contributed. [[Contribute]](CONTRIBUTING.md).
-<a href="https://github.com/openemr/openemr/graphs/contributors"><img src="https://opencollective.com/openemr/contributors.svg?width=890" /></a>
-
-
-### Sponsors
-
-Thanks to our [2015 Edition Major Sponsors](https://www.open-emr.org/wiki/index.php/OpenEMR_Certification_Stage_III_Meaningful_Use#Major_sponsors)!
-
-
-### License
-
-[GNU GPL](LICENSE)
