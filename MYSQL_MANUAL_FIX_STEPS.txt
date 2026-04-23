@@ -1,0 +1,180 @@
+========================================
+XAMPP MySQL - MANUAL FIX STEPS
+========================================
+
+PROBLEM: MySQL won't start - Missing tablespace file (addresses.ibd)
+
+FOLLOW THESE STEPS EXACTLY:
+
+========================================
+STEP 1: OPEN XAMPP CONTROL PANEL
+========================================
+1. Navigate to: C:\xampp
+2. Double-click: xampp-control.exe
+3. If MySQL shows "Running", click "Stop" and wait
+
+========================================
+STEP 2: EDIT MYSQL CONFIGURATION
+========================================
+1. In XAMPP Control Panel, click "Config" button next to MySQL
+2. Select "my.ini" from the dropdown menu
+3. Notepad will open
+
+4. Find the [mysqld] section (should be at the top)
+5. After the line that says "[mysqld]", add these TWO lines:
+
+innodb_force_recovery = 1
+innodb_purge_threads = 0
+
+Your [mysqld] section should now look like this:
+
+[mysqld]
+innodb_force_recovery = 1
+innodb_purge_threads = 0
+port=3306
+socket="C:/xampp/mysql/mysql.sock"
+... (rest of the config)
+
+6. Save the file: Ctrl+S
+7. Close Notepad
+
+========================================
+STEP 3: START MYSQL IN RECOVERY MODE
+========================================
+1. In XAMPP Control Panel, click "Start" button next to MySQL
+2. Watch the status - it should turn GREEN
+3. If it starts successfully, continue to Step 4
+4. If it FAILS, go to TROUBLESHOOTING section below
+
+========================================
+STEP 4: FIX THE DATABASE
+========================================
+1. Click "Admin" button next to MySQL in XAMPP Control Panel
+   (This opens phpMyAdmin in your browser)
+
+2. Click on "openemr" database in the left sidebar
+
+3. Click "SQL" tab at the top
+
+4. Copy and paste this command:
+
+DROP TABLE IF EXISTS addresses;
+
+5. Click "Go" button
+
+6. Then copy and paste this command:
+
+CREATE TABLE addresses (
+  id int(11) NOT NULL default '0',
+  line1 varchar(255) default NULL,
+  line2 varchar(255) default NULL,
+  city varchar(255) default NULL,
+  state varchar(35) default NULL,
+  zip varchar(10) default NULL,
+  plus_four varchar(4) default NULL,
+  country varchar(255) default NULL,
+  foreign_id int(11) default NULL,
+  district VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (id),
+  KEY foreign_id (foreign_id)
+) ENGINE=InnoDB;
+
+7. Click "Go" button
+8. You should see "Query executed successfully"
+
+========================================
+STEP 5: REMOVE RECOVERY MODE
+========================================
+1. Go back to XAMPP Control Panel
+2. Click "Stop" button next to MySQL
+3. Wait for it to fully stop
+
+4. Click "Config" → "my.ini" again
+5. Find the lines you added:
+   innodb_force_recovery = 1
+   innodb_purge_threads = 0
+
+6. DELETE or COMMENT OUT these lines (add # in front):
+   #innodb_force_recovery = 1
+   #innodb_purge_threads = 0
+
+7. Save the file: Ctrl+S
+8. Close Notepad
+
+========================================
+STEP 6: START MYSQL NORMALLY
+========================================
+1. In XAMPP Control Panel, click "Start" button next to MySQL
+2. MySQL should now start in NORMAL mode
+3. Status should turn GREEN
+4. ✓ FIXED! MySQL is now running properly
+
+========================================
+STEP 7: VERIFY EVERYTHING WORKS
+========================================
+1. Open browser: http://localhost/phpmyadmin
+2. You should see the login screen or database list
+3. Click "openemr" database
+4. You should see all your tables including "addresses"
+5. Try accessing Jactrac: http://localhost/openemr
+6. Login should work normally
+
+========================================
+TROUBLESHOOTING
+========================================
+
+IF MYSQL WON'T START IN RECOVERY MODE:
+
+Problem A: Port 3306 is already in use
+Solution:
+1. Open Task Manager (Ctrl+Shift+Esc)
+2. Look for "mysqld.exe" or "mysql" processes
+3. Right-click → End Task
+4. Try starting MySQL again
+
+Problem B: Another MySQL service running
+Solution:
+1. Press Win+R, type: services.msc
+2. Look for any "MySQL" services
+3. Right-click → Stop
+4. Try starting XAMPP MySQL again
+
+Problem C: Corrupted data directory
+Solution:
+1. Rename: C:\xampp\mysql\data → C:\xampp\mysql\data_old
+2. Copy: C:\xampp\mysql\backup → C:\xampp\mysql\data
+3. Start MySQL
+4. Restore your databases from backup
+
+========================================
+IMPORTANT NOTES
+========================================
+
+⚠️ innodb_force_recovery modes:
+- 1 = Ignore corrupt pages (SAFEST)
+- 2 = Prevent master thread operations
+- 3 = Don't run transaction rollbacks
+- 4 = Don't calculate statistics
+- 5 = Don't use undo logs
+- 6 = Don't do recovery on startup (DANGEROUS)
+
+✓ Start with 1, only increase if needed
+
+⚠️ NEVER leave recovery mode enabled permanently!
+   It's only for emergency recovery and repairs.
+
+========================================
+CONTACT INFO
+========================================
+
+If you're still stuck after trying all solutions:
+1. Check XAMPP forums
+2. Post on Stack Overflow with error logs
+3. Consider professional database recovery service
+
+Error log location:
+C:\xampp\mysql\data\[COMPUTERNAME].err
+
+========================================
+
+

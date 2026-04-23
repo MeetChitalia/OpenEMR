@@ -1,0 +1,55 @@
+<html>
+<head>
+    {{ setupHeader() }}
+    <title>{{ "About"|xlt }} {{ applicationTitle|text }}</title>
+</head>
+<body class="body_top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-8 offset-lg-2 mt-5">
+                <h1 class="text-center">{{ "About"|xlt }} {{ applicationTitle|text }}</h1>
+                <p class="text-center text-muted mt-3 mb-4">{{ systemHeadline|text }}</p>
+
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body">
+                        <p class="mb-3">{{ systemSummary|text }}</p>
+                        <p class="mb-3">{{ companySummary|text }}</p>
+                        {% if featurePoints %}
+                            <ul class="mb-0 pl-3">
+                                {% for feature in featurePoints %}
+                                    <li>{{ feature|text }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="version-info d-flex justify-content-between">
+                    <p>{{ "Version Number"|xlt }}</p>
+                    <strong>{{ versionNumber|text }}</strong>
+                </div>
+
+                <div class="uuid-info d-flex justify-content-between">
+                    <p>{{ "Unique Installation UUID"|xlt }}</p>
+                    <strong>{{ theUUID|text }}</strong>
+                </div>
+
+                {% if supportPhoneNumber %}
+                <div class="phone d-flex justify-content-between">
+                    <p>{{ "Support Phone Number"|xlt }}</p>
+                    <strong><a href="tel:{{ supportPhoneNumber|javascriptStringRemove|attr }}" target="_blank">{{ supportPhoneNumber|text }}</a></strong>
+                </div>
+                {% endif %}
+
+                {% if companyWebsiteHref %}
+                <div class="user-manual mt-3">
+                    <a href="{{ companyWebsiteHref|javascriptStringRemove|attr }}" target="_blank" rel="noopener" class="btn text-left btn-block btn-outline-secondary btn-lg">
+                        <i class="fa fa-fw fa-globe fa-lg"></i>&nbsp;{{ companyWebsiteLabel|text }}
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

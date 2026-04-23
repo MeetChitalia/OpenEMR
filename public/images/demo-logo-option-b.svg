@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="220" viewBox="0 0 920 220" role="img" aria-labelledby="titleB descB">
+<title id="titleB">Demo EMR logo option B</title>
+<desc id="descB">Rounded badge healthcare logo with pulse line and EMR wordmark.</desc>
+<defs>
+<linearGradient id="bGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#12b886"/>
+<stop offset="100%" stop-color="#0b7a63"/>
+</linearGradient>
+</defs>
+<rect width="920" height="220" rx="28" fill="#ffffff"/>
+<g transform="translate(28 28)">
+<rect x="0" y="0" width="164" height="164" rx="42" fill="url(#bGrad)"/>
+<circle cx="82" cy="82" r="48" fill="none" stroke="#ffffff" stroke-width="10" opacity="0.28"/>
+<path d="M34 88h24l10-20 15 38 14-27h33" fill="none" stroke="#ffffff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g transform="translate(220 58)">
+<text x="0" y="52" fill="#10322e" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="700" letter-spacing="2">EMR</text>
+<text x="0" y="95" fill="#3f6a64" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">SMART CARE SYSTEM</text>
+<text x="1" y="129" fill="#7d9792" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" letter-spacing="1">Clean, modern, trustworthy branding for a healthcare demo</text>
+</g>
+</svg>

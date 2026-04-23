@@ -1,0 +1,72 @@
+Subject: Jactrac System - User Roles Classification Guide Documentation
+
+Dear [Client Name],
+
+I hope this email finds you well. I am pleased to provide you with the comprehensive User Roles Classification Guide for your Jactrac healthcare management system.
+
+## Documentation Overview
+
+I have created a detailed guide that outlines all user roles and their specific permissions within your Jactrac system. This documentation is based on your system's actual module structure and includes:
+
+### System Modules Covered:
+- **Finder** - Patient and user search functionality
+- **POS** - Point of Sale operations and transactions
+- **Patient** - Patient management and medical records
+- **Inventory** - Stock management and inventory operations
+- **Audit** - System monitoring and audit trails
+- **Admin** - System administration and configuration
+- **Reports** - Analytics and reporting capabilities
+
+### User Roles Documented:
+- **Administrators** - Full system access with administrative privileges
+- **Physicians** - Medical professionals with clinical access
+- **Clinicians** - Healthcare providers with patient care capabilities
+- **Front Office** - Reception and administrative staff
+- **Accounting** - Financial and billing staff
+- **Emergency Login** - Emergency access role for critical situations
+
+## Access Information
+
+The User Roles Classification Guide is now available within your Jactrac system at:
+**URL:** http://localhost/openemr/interface/usergroup/user_roles_guide.php
+
+### Key Features:
+- ✅ **Professional Formatting** - Clean, organized layout with proper styling
+- ✅ **PDF Generation** - Built-in "Print/Save as PDF" functionality
+- ✅ **Security** - Only administrators can access the guide
+- ✅ **Comprehensive Details** - Each role includes specific permissions and capabilities
+- ✅ **System-Specific** - Tailored to your Jactrac system modules
+
+## Benefits for Your Organization
+
+This documentation will help you:
+- **Streamline User Management** - Clear understanding of role capabilities
+- **Ensure Security Compliance** - Proper access control documentation
+- **Facilitate Training** - Reference material for staff onboarding
+- **Support Audits** - Complete role and permission documentation
+- **Improve Operations** - Better understanding of system capabilities
+
+## Next Steps
+
+1. **Review the Guide** - Access the documentation through the provided URL
+2. **Generate PDF** - Use the print function to create a PDF version for your records
+3. **Share with Team** - Distribute to relevant staff members as needed
+4. **Feedback** - Please let me know if any adjustments or additional information is required
+
+## Support
+
+If you have any questions about the user roles, need modifications to the documentation, or require assistance with user management in your Jactrac system, please don't hesitate to contact me.
+
+I am committed to ensuring your Jactrac system operates efficiently and securely, and this documentation is part of that ongoing support.
+
+Thank you for your trust in our services.
+
+Best regards,
+
+[Your Name]
+[Your Title]
+[Company Name]
+[Contact Information]
+
+---
+**Confidentiality Notice:** This email and its attachments contain confidential information intended solely for the use of the individual or entity to whom it is addressed. If you are not the intended recipient, please notify the sender immediately and delete this email from your system.

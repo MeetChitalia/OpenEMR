@@ -1,0 +1,237 @@
+/* Modern Demographics Styling */
+.patient-demographic {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+/* Modern card container */
+#DEM {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 30px;
+    border: none;
+}
+
+/* Modern group headers */
+#DEM .groupname {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 12px 12px 0 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+/* Modern form layout */
+#DEM table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    background: white;
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern label styling */
+#DEM .label_custom {
+    background: #f8f9fa;
+    color: #495057;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-left: 4px solid #007bff;
+    border-radius: 0;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+#DEM .label_custom:hover {
+    background: #e9ecef;
+    border-left-color: #0056b3;
+}
+
+/* Modern data field styling */
+#DEM .data {
+    background: white;
+    padding: 15px 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 0;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+#DEM .data:hover {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.15);
+}
+
+/* Modern form controls */
+#DEM .form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+#DEM .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Modern select dropdowns */
+#DEM select.form-control {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+/* Modern buttons */
+#DEM .btn {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+#DEM .btn-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+}
+
+#DEM .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+}
+
+#DEM .btn-secondary {
+    background: linear-gradient(135deg, #6c757d 0%, #545b62 100%);
+    color: white;
+}
+
+#DEM .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(108, 117, 125, 0.4);
+}
+
+/* Modern table rows */
+#DEM tr {
+    transition: background-color 0.3s ease;
+}
+
+#DEM tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+#DEM tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Modern input groups */
+#DEM .input-group {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#DEM .input-group-text {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    color: #495057;
+    font-weight: 500;
+}
+
+/* Modern checkboxes and radio buttons */
+#DEM input[type="checkbox"],
+#DEM input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #007bff;
+}
+
+/* Modern date inputs */
+#DEM input[type="date"] {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+}
+
+/* Modern textarea */
+#DEM textarea.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #DEM {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    #DEM .form-control {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    #DEM .label_custom,
+    #DEM .data {
+        padding: 12px 15px;
+    }
+    
+    #DEM .groupname {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Animation for page load */
+#DEM {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Modern scrollbar */
+#DEM ::-webkit-scrollbar {
+    width: 8px;
+}
+
+#DEM ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+#DEM ::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+#DEM ::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+} 

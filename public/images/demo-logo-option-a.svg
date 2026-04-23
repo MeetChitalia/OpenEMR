@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="220" viewBox="0 0 920 220" role="img" aria-labelledby="titleA descA">
+<title id="titleA">Demo EMR logo option A</title>
+<desc id="descA">Shield and cross healthcare logo with EMR wordmark.</desc>
+<defs>
+<linearGradient id="aGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#1d9bf0"/>
+<stop offset="100%" stop-color="#1259c3"/>
+</linearGradient>
+</defs>
+<rect width="920" height="220" rx="28" fill="#ffffff"/>
+<g transform="translate(30 30)">
+<path d="M80 0l58 20v52c0 42-23 73-58 88C45 145 22 114 22 72V20L80 0z" fill="url(#aGrad)"/>
+<path d="M69 38c0-6.1 4.9-11 11-11s11 4.9 11 11v18h18c6.1 0 11 4.9 11 11s-4.9 11-11 11H91v18c0 6.1-4.9 11-11 11s-11-4.9-11-11V78H51c-6.1 0-11-4.9-11-11s4.9-11 11-11h18V38z" fill="#ffffff"/>
+</g>
+<g transform="translate(190 65)">
+<text x="0" y="54" fill="#0f2747" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" letter-spacing="3">EMR</text>
+<text x="2" y="98" fill="#4f6b87" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="5">HEALTH PLATFORM</text>
+<rect x="2" y="116" width="270" height="8" rx="4" fill="#d8e8fb"/>
+<rect x="2" y="116" width="176" height="8" rx="4" fill="#1d9bf0"/>
+</g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="220" viewBox="0 0 920 220" role="img" aria-labelledby="titleC descC">
+<title id="titleC">Demo EMR logo option C</title>
+<desc id="descC">Minimal circular healthcare logo with monogram and EMR wordmark.</desc>
+<defs>
+<linearGradient id="cGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#7c3aed"/>
+<stop offset="100%" stop-color="#4c1d95"/>
+</linearGradient>
+</defs>
+<rect width="920" height="220" rx="28" fill="#ffffff"/>
+<g transform="translate(26 26)">
+<circle cx="84" cy="84" r="78" fill="url(#cGrad)"/>
+<circle cx="84" cy="84" r="52" fill="none" stroke="#ffffff" stroke-width="8" opacity="0.22"/>
+<path d="M54 111V58h18l18 27 18-27h18v53h-14V80l-17 25h-10L68 80v31H54z" fill="#ffffff"/>
+</g>
+<g transform="translate(214 62)">
+<text x="0" y="52" fill="#231942" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700" letter-spacing="2">EMR</text>
+<text x="0" y="95" fill="#5c4b88" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="5">PATIENT MANAGEMENT</text>
+<path d="M0 122h250" stroke="#d9d0f0" stroke-width="8" stroke-linecap="round"/>
+<path d="M0 122h130" stroke="#7c3aed" stroke-width="8" stroke-linecap="round"/>
+</g>
+</svg>

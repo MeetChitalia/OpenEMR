@@ -1,0 +1,44 @@
+[
+  {
+    "id": "main",
+    "label": "Main",
+    "icon": "fa fa-home",
+    "url": "interface/main/main_screen.php"
+  },
+  {
+    "id": "patients",
+    "label": "Patients",
+    "icon": "fa fa-users",
+    "url": "interface/patient_file/summary/demographics.php"
+  },
+  {
+    "id": "calendar",
+    "label": "Calendar",
+    "icon": "fa fa-calendar",
+    "url": "interface/main/calendar/index.php"
+  },
+  {
+    "id": "flowboard",
+    "label": "Flow Board",
+    "icon": "fa fa-columns",
+    "url": "interface/main/flow_board/flow_board.php"
+  },
+  {
+    "id": "reports",
+    "label": "Reports",
+    "icon": "fa fa-bar-chart",
+    "url": "interface/reports/report_engine.php"
+  },
+  {
+    "id": "inventory",
+    "label": "Inventory",
+    "icon": "fa fa-boxes",
+    "url": "interface/drugs/drug_inventory.php"
+  },
+  {
+    "id": "admin",
+    "label": "Administration",
+    "icon": "fa fa-cogs",
+    "url": "interface/main/administration/admin.php"
+  }
+] 

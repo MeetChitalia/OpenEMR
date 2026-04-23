@@ -1,0 +1,36 @@
+20250624:170644 _GET request 
+ archlist => yes  csrf_token_form => 456c395c5f8b95ebafbf314e49f7d7d29b80a97f 
+20250624:170644 EDI_History Setup should not overwrite existing data.<br />
+Setup: directory C:/xampp/htdocs/openemr/sites/default\documents\edi<br />
+created folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history<br />
+created folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\csv<br />
+created folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\archive<br />
+created folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\log<br />
+created folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\tmp
+folder for f837 exists C:/xampp/htdocs/openemr/sites/default\documents\edi<br />
+folder for f997 exists C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f997<br />
+folder for f276 exists C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f276<br />
+folder for f277 exists C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f277<br />
+folder for f270 exists C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f270<br />
+folder for f271 exists C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f271<br />
+folder for f278 exists C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f278<br />
+folder for f835 exists C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f835<br />
+
+20250624:170644 EDI_History Setup should not overwrite existing data.<br />
+Setup: directory C:/xampp/htdocs/openemr/sites/default\documents\edi<br />
+created folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history<br />
+created folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\csv<br />
+created folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\archive<br />
+created folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\log<br />
+created folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\tmp
+folder for f837 exists C:/xampp/htdocs/openemr/sites/default\documents\edi<br />
+created type folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f997<br />
+created type folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f276<br />
+created type folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f277<br />
+created type folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f270<br />
+created type folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f271<br />
+created type folder C:/xampp/htdocs/openemr/sites/default\documents\edi\history\f278<br />
+
+20250624:170644 csv_archive_select_list: using C:/xampp/htdocs/openemr/sites/default\documents\edi\history\archive
+20250624:170644 _GET request 
+ srvinfo => yes  csrf_token_form => 456c395c5f8b95ebafbf314e49f7d7d29b80a97f 

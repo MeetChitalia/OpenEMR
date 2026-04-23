@@ -1,0 +1,151 @@
+/*=============================================================
+ * This section relates to the custom layouts that can be made
+ * using the OEMR tool in the Admin section. For example, the
+ * Patient Demographics are a custom layout.
+ *============================================================*/
+
+@if $compact-theme == false {
+  #DEM {
+    // Modern card-based styling
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    
+    // Group styling with modern cards
+    .groupname {
+      @include font-size("1rem");
+      color: #495057;
+      font-weight: 600;
+      padding: 15px 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 8px 8px 0 0;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    // Modern form styling
+    .label_custom {
+      @include font-size("0.9rem");
+      font-weight: 600;
+      text-align: $left;
+      vertical-align: middle;
+      color: #495057;
+      padding: 12px 15px;
+      background: #f8f9fa;
+      border-radius: 6px;
+      margin: 5px 0;
+      border-left: 4px solid #007bff;
+    }
+
+    .data {
+      @include font-size("0.9rem");
+      padding: 12px 15px;
+      text-align: $left;
+      vertical-align: middle;
+      background: white;
+      border-radius: 6px;
+      margin: 5px 0;
+      border: 1px solid #e9ecef;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        border-color: #007bff;
+        box-shadow: 0 2px 4px rgba(0, 123, 255, 0.1);
+    }
+    }
+
+    // Modern form controls
+    .form-control {
+      display: inline-block;
+      width: auto;
+      min-width: 200px;
+      border: 1px solid #ced4da;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      
+      &:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        outline: none;
+      }
+    }
+    
+    // Table styling for modern look
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+      width: 100%;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    td {
+      border: none;
+      padding: 12px 15px;
+      vertical-align: middle;
+    }
+    
+    // Row styling
+    tr {
+      transition: background-color 0.3s ease;
+      
+      &:hover {
+        background-color: #f8f9fa;
+      }
+      
+      &:nth-child(even) {
+        background-color: #f8f9fa;
+      }
+    }
+    
+    // Modern button styling
+    .btn {
+      border-radius: 6px;
+      padding: 8px 16px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      
+      &.btn-primary {
+        background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+        border: none;
+        
+        &:hover {
+          transform: translateY(-1px);
+          box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+        }
+      }
+    }
+    
+    // Section styling
+    .section {
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    
+    // Responsive design
+    @media (max-width: 768px) {
+      padding: 10px;
+      margin: 10px;
+      
+      .form-control {
+        width: 100%;
+        min-width: auto;
+      }
+      
+      .label_custom, .data {
+        padding: 8px 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+# Commands to check your Digital Ocean server configuration
+
+# 1. Check PHP configuration
+php -i | grep -E "(upload_max_filesize|post_max_size|memory_limit|max_execution_time)"
+
+# 2. Check disk space
+df -h
+
+# 3. Check available memory
+free -h
+
+# 4. Check PHP version
+php -v
+
+# 5. Check if unzip is installed
+which unzip
+unzip -v
+
+# 6. Check directory permissions
+ls -la /path/to/your/upload/directory
+
+# 7. Check PHP error logs
+tail -f /var/log/php_errors.log
+# OR
+tail -f /var/log/apache2/error.log
+# OR
+tail -f /var/log/nginx/error.log
+
+# 8. Check if mod_rewrite is enabled (for OpenEMR)
+apache2ctl -M | grep rewrite
+# OR for nginx
+nginx -t
+
+# 9. Check file upload limits in php.ini
+cat /etc/php/*/apache2/php.ini | grep -E "(upload_max_filesize|post_max_size|memory_limit)"

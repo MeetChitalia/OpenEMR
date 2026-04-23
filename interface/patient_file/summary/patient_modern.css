@@ -1,0 +1,248 @@
+/* Modern Patient Demographics Styles */
+
+body.patient-demographic {
+  background: #f8f9fa;
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+}
+
+.modern-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 32px;
+  margin: 32px auto;
+  max-width: 700px;
+}
+
+.modern-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.modern-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.modern-form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.modern-form-section.modern-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 32px;
+}
+
+.modern-form-group {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.modern-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.modern-label.required {
+  color: #c0392b;
+  font-weight: 600;
+}
+
+.modern-data {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  color: #222;
+  border: 1.5px solid #e0e0e0;
+  min-height: 38px;
+}
+
+.modern-input-wrapper {
+  width: 100%;
+}
+
+.modern-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1.5px solid #e0e0e0;
+  font-size: 1rem;
+  transition: all 0.2s;
+  background: #fff;
+}
+
+.modern-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.modern-btn {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.2s;
+  border: none;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  cursor: pointer;
+}
+
+.modern-btn:hover {
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* New Patient Form Specific Styles */
+.container-xl .card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: none;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.container-xl .card-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: none;
+  padding: 20px 25px;
+}
+
+.container-xl .card-header h2 {
+  margin: 0;
+}
+
+.container-xl .card-header .btn-link {
+  color: white !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.container-xl .card-header .btn-link:hover {
+  text-decoration: none;
+  color: #f8f9fa !important;
+}
+
+.container-xl .card-body {
+  padding: 30px;
+  background: white;
+}
+
+.container-xl .form-group {
+  margin-bottom: 20px;
+}
+
+.container-xl .form-group.row {
+  align-items: center;
+}
+
+.container-xl .col-form-label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.container-xl .form-control {
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.container-xl .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.container-xl .form-control-sm {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+}
+
+.container-xl .btn {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.2s;
+  border: none;
+}
+
+.container-xl .btn-primary {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+}
+
+.container-xl .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.15);
+}
+
+.container-xl .btn-secondary {
+  background: linear-gradient(135deg, #6c757d 0%, #545b62 100%);
+  color: white;
+}
+
+.container-xl .btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(108, 117, 125, 0.15);
+}
+
+@media (max-width: 768px) {
+  .modern-card {
+    margin: 10px;
+    padding: 16px;
+    max-width: 100%;
+  }
+  .modern-title {
+    font-size: 1.3rem;
+  }
+  .modern-form-section {
+    gap: 10px;
+  }
+  
+  .container-xl .card-body {
+    padding: 20px;
+  }
+  
+  .container-xl .card-header {
+    padding: 15px 20px;
+  }
+
+  .modern-form-section.modern-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+.flex-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.modern-name-field {
+  flex: 1 1 0;
+  min-width: 120px;
+}
+
+.span-2 {
+  grid-column: span 2;
+} 
